@@ -1,12 +1,12 @@
-<div class="card">
-    <div class="card-title text-center text-uppercase ">
+<section class="jumbotron jumbotron-fluid">
+    <h1 class="text-center text-uppercase ">
         Your tasks
-    </div>
-    <ul class="list-group">
+    </h1>
+    <ul class="list-group m-5">
         @foreach($data->tasks as $task)
-            <li class="list-group-item card-deck">
+            <li class="list-group-item card-deck m-3 bg-light">
                 <div class="list-group-item">
-                    {{$task->name}}
+                    <h5>{{$task->name}}</h5>
                 </div>
                 <form class="list-group-item" method="post" action="{{route('tasks.update', [$task->id])}}">
                     @csrf
@@ -18,4 +18,4 @@
         @endforeach
 
     </ul>
-</div>
+</section>
