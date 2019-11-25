@@ -1,6 +1,6 @@
 # Relative works task
 
-Custom todo website with 2 types of users: casuall and admins.
+Custom todo website with 2 types of users: casual and admins.
 
 Admins can assign tasks to users and users can retview them and mark them as completed
 
